@@ -30,8 +30,7 @@ const StyledTextareaAutosize = styled(TextareaAutosize)(
   // @ts-ignore
   ({ isLongContent }) => ({
     width: '100%',
-    height: '35px !important',
-    padding: '5px',
+    padding: '5px 0',
     background: 'transparent',
     fontSize: isLongContent ? '14px' : '22px',
 
@@ -46,10 +45,10 @@ const StyledTextareaAutosize = styled(TextareaAutosize)(
 
 const AutoSizeInputWrapper = styled.div`
   width: 350px;
-  height: 75px;
 
   position: relative;
   padding: 10px 10px 20px 10px;
+  margin-bottom: 20px;
   z-index: 0;
 `;
 
@@ -105,18 +104,19 @@ export const AutoSizeInput: React.FC<IAutoSizeInputProps> = forwardRef(
       }
     };
 
+    const showLabelBottom = Boolean(
+      isFocused || areaValue || (!wasChanged && defaultValue)
+    );
+
     const animProps = useSpring({
       config: { duration: 150 },
-      top: isFocused ? '55px' : '10px',
-      fontSize: isFocused ? '14px' : '22px',
+      bottom: showLabelBottom ? '-11px' : '30px',
+      fontSize: showLabelBottom ? '14px' : '22px',
     });
 
     return (
       <AutoSizeInputWrapper>
-        {label &&
-          ((!wasChanged && !defaultValue) || (wasChanged && !areaValue)) && (
-            <StyledLabel style={animProps}>{label}</StyledLabel>
-          )}
+        {label && <StyledLabel style={animProps}>{label}</StyledLabel>}
         <StyledTextareaAutosize
           onFocus={() => onAreaFocus()}
           onBlur={() => onAreaBlur()}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/focusCalendar/static/css/main.45afa9c8.chunk.css",
+    "main.js": "/focusCalendar/static/js/main.23bd2926.chunk.js",
+    "main.js.map": "/focusCalendar/static/js/main.23bd2926.chunk.js.map",
+    "runtime-main.js": "/focusCalendar/static/js/runtime-main.a90ae171.js",
+    "runtime-main.js.map": "/focusCalendar/static/js/runtime-main.a90ae171.js.map",
+    "static/js/2.d2ff16b2.chunk.js": "/focusCalendar/static/js/2.d2ff16b2.chunk.js",
+    "static/js/2.d2ff16b2.chunk.js.map": "/focusCalendar/static/js/2.d2ff16b2.chunk.js.map",
+    "index.html": "/focusCalendar/index.html",
+    "precache-manifest.b81d1c67fd371579a7fd3b89c33a130a.js": "/focusCalendar/precache-manifest.b81d1c67fd371579a7fd3b89c33a130a.js",
+    "service-worker.js": "/focusCalendar/service-worker.js",
+    "static/css/main.45afa9c8.chunk.css.map": "/focusCalendar/static/css/main.45afa9c8.chunk.css.map",
+    "static/js/2.d2ff16b2.chunk.js.LICENSE.txt": "/focusCalendar/static/js/2.d2ff16b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a90ae171.js",
+    "static/js/2.d2ff16b2.chunk.js",
+    "static/css/main.45afa9c8.chunk.css",
+    "static/js/main.23bd2926.chunk.js"
+  ]
+}
